@@ -1,23 +1,38 @@
-# Web Automation Testing Suite (Selenium + Python)
+# 🚀 Selenium Python Automation Framework
 
-## 📌 Project Overview
-A robust automation framework designed to validate core user workflows for web applications. This project demonstrates the implementation of functional testing, assertions, and clean code practices in Test Automation.
+A professional-grade web automation testing suite built using **Python** and **Selenium WebDriver**. This project implements the **Page Object Model (POM)** design pattern to ensure scalability, reusability, and easy maintenance of test cases.
 
-## 🛠️ Tech Stack
+---
+
+## 🛠️ Tech Stack & Tools
 * **Language:** Python 3.x
-* **Library:** Selenium WebDriver
-* **Browser:** Chrome (via WebDriver)
-* **Design Pattern:** Functional Automation / [Optional: Page Object Model]
+* **Automation Tool:** Selenium WebDriver 4.x
+* **Test Runner:** Unittest (Python Standard Library)
+* **Design Pattern:** Page Object Model (POM)
+* **Browser Driver:** WebDriver Manager (Auto-install)
 
-## 🚀 Key Features implemented
-* **Automated Login Workflow:** Full end-to-end script for user authentication.
-* **Validation & Assertions:** Uses Python assertions to verify page titles and successful URL redirects.
-* **Error Handling:** Implemented waits to handle asynchronous page loading.
-* **Modular Structure:** Organized directory for testing templates and project assets.
+---
 
-## 📂 Project Structure
-```text
-├── Software-Testing-Projects-main/   # Documentation and Test Templates
-├── test_google.py                    # Main Selenium Test Script
-└── README.md                         # Project Documentation# Testing Practice
-tester
+## 🏗️ Project Architecture
+This framework is structured to separate test logic from page-specific locators:
+
+* **`pages/`**: Contains Page Objects. Each file represents a web page (e.g., `login_page.py`) and contains its locators and actions.
+* **`tests/`**: Contains the actual Test Suites. These scripts are kept clean and readable by calling methods from the Page Objects.
+* **`base_page.py`**: A wrapper for Selenium common methods like explicit waits, clicks, and typing.
+
+---
+
+## 🌟 Key Features
+* ✅ **Page Object Model:** Decoupled locators from test scripts for 40% better maintainability.
+* ✅ **Explicit Waits:** Implemented `WebDriverWait` to handle dynamic elements and eliminate "flaky" tests.
+* ✅ **Automated Driver Management:** Uses `webdriver-manager` to remove the need for manual `.exe` downloads.
+* ✅ **CI/CD Ready:** Configured with GitHub Actions to run tests automatically on every push.
+
+---
+
+## 🏃 How to Run Locally
+
+1. **Clone the repo:**
+   ```bash
+   git clone [https://github.com/simransurve2000-alt/Testing-Practice.git](https://github.com/simransurve2000-alt/Testing-Practice.git)
+   cd Testing-Practice
